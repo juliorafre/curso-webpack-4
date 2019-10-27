@@ -11,17 +11,43 @@
         "build-css-loader": "webpack --config ./css-style-loader/webpack.config.js",
         "build-plugins": "webpack --config ./plugins/webpack.config.js",
         "build-server": "webpack --config ./webpack-dev-server/webpack.config.js",
-        "dev-server": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js"
+        "dev-server": "webpack-dev-server --config ./webpack-dev-server/webpack.config.js",
+        "build-babel": "webpack-dev-server --config ./babel/webpack.config.js",
+        "build-react": "webpack-dev-server --config ./react/webpack.config.js",
+        "build-url": "webpack-dev-server --config ./url-loader/webpack.config.js",
+        "build-prepro": "webpack-dev-server --config ./prepro/webpack.config.js",
+        "dev-prevent-duplucation": "webpack-dev-server --config ./prevent-duplication/webpack.config.js",
+        "build-prevent-duplucation": "webpack --config ./prevent-duplication/webpack.config.js"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "7.6.4",
+        "@babel/plugin-transform-runtime": "7.6.2",
+        "@babel/preset-env": "7.6.3",
+        "@babel/preset-react": "7.6.3",
+        "babel-loader": "8.0.6",
         "css-loader": "3.2.0",
+        "file-loader": "4.2.0",
         "html-webpack-plugin": "3.2.0",
+        "less": "3.10.3",
+        "less-loader": "5.0.0",
         "mini-css-extract-plugin": "0.8.0",
+        "node-sass": "4.13.0",
+        "postcss-loader": "3.0.0",
+        "postcss-nested": "4.1.2",
+        "sass-loader": "8.0.0",
         "style-loader": "1.0.0",
+        "stylus": "0.54.7",
+        "stylus-loader": "3.0.2",
+        "url-loader": "1.1.2",
         "webpack": "4.32.2",
         "webpack-cli": "^3.3.2",
         "webpack-dev-server": "3.8.2"
+    },
+    "dependencies": {
+        "@babel/runtime": "7.6.3",
+        "react": "16.11.0",
+        "react-dom": "16.11.0"
     }
 }
